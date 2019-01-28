@@ -24,13 +24,13 @@ namespace UnitTestJenkinsProject1
                             $"C:\\temp\\log\\{DateTime.Now.ToString(Iso8601Foramt)}\\debug.log"));
         }
 
-        [TestMethod]
-        public void LogFatalTest()
-        {
-            //Logger.Warn("測試嚴重錯誤");
-            //Assert.IsTrue(File.Exists($"" +
-            //              $"d:\\web\\unit_test_jenkins_log\\{DateTime.Now.ToString(Iso8601Foramt)}\\fatal.log"));
+        //[TestMethod]
+        //public void LogFatalTest()
+        //{
+        //    //Logger.Warn("測試嚴重錯誤");
+        //    //Assert.IsTrue(File.Exists($"" +
+        //    //              $"d:\\web\\unit_test_jenkins_log\\{DateTime.Now.ToString(Iso8601Foramt)}\\fatal.log"));
 
-        }
+        //}
     }
 }

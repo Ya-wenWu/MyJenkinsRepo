@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="MyJenkinsRepo" id="4fa7fefc-894a-42aa-9815-c01498792ade" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>這些是本機測試回合的預設測試設定。</Description>
+  <NamingScheme baseName="MyJenkinsRepoTest.TestResult" useDefault="false" />
+  <Execution hostProcessPlatform="MSIL">
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+      <DataCollectors>
+        <DataCollector uri="datacollector://microsoft/CodeCoverage/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.CodeCoverage.CoveragePlugIn, Microsoft.VisualStudio.QualityTools.Plugins.CodeCoverage, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="程式碼涵蓋範圍 (Visual Studio 2010)">
+          <Configuration>
+            <CodeCoverage xmlns="">
+              <Regular>
+                <CodeCoverageItem binaryFile="MyJenkinsRepo1.Tests\bin\Release\MyJenkinsRepo1.Tests.dll" pdbFile="MyJenkinsRepo1.Tests\bin\Release\MyJenkinsRepo1.Tests.pdb" instrumentInPlace="true" />
+                <CodeCoverageItem binaryFile="UnitTestJenkinsProject1\bin\Release\UnitTestJenkinsProject1.dll" pdbFile="UnitTestJenkinsProject1\bin\Release\UnitTestJenkinsProject1.pdb" instrumentInPlace="true" />
+              </Regular>
+              <AspNet>
+                <AspNetCodeCoverageItem id="2bcbff21-fdc6-484f-998f-8d4a2891a7c1" name="MyJenkinsRepo1" url="http://localhost:13729/" isIis="true" />
+              </AspNet>
+            </CodeCoverage>
+          </Configuration>
+        </DataCollector>
+      </DataCollectors>
+    </AgentRule>
+  </Execution>
+  <Properties />
+</TestSettings>

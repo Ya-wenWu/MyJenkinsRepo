@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TestSettings name="Local" id="769d698b-15b2-4a09-bc37-4ce7ea8a705d" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>這些是本機測試回合的預設測試設定。</Description>
-  <NamingScheme baseName="TestResults" useDefault="false" />
+  <NamingScheme baseName="TestResultsAAA" appendTimeStamp="false" useDefault="false" />
   <Execution hostProcessPlatform="MSIL">
     <Hosts skipUnhostableTests="false">
       <AspNet name="ASP.NET" executionType="WebDev" />
